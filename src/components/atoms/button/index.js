@@ -3,26 +3,26 @@ import { Text,StyleSheet } from 'react-native';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 import {colors} from '../../../utils'
 
-const Button1 = ({title}) =>{
+const Button = ({title,backcolor=colors.default1,textcolor=colors.text.dark}) =>{
     return(
-        <TouchableOpacity style={styles.button}>
-            <Text style={styles.textbutton}>{title}</Text>
+        <TouchableOpacity style={styles.button(backcolor)}>
+            <Text style={styles.textbutton(textcolor)}>{title}</Text>
         </TouchableOpacity>
     )
 }
 
 const styles = StyleSheet.create({
-    button:{
+    button:(backcolor)=>({
         padding: 12,
         alignItems:'center',
-        backgroundColor:colors.default1,
+        backgroundColor:backcolor,
         marginVertical:6,
         borderRadius:8,
-    },
-    textbutton:{
+    }),
+    textbutton:(textcolor)=>({
         fontFamily:'Poppins-Medium',
         fontSize:14,
-        color:colors.text.dark
-    }
+        color:textcolor
+    }),
 });
-export default Button1;
+export default Button;

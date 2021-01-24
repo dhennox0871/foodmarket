@@ -1,6 +1,7 @@
 import React from 'react'
 import {  StyleSheet, View } from 'react-native'
-import { HeaderNoIcon, Inputtext, Button2,Button1 } from '../../components'
+import { Button, HeaderNoIcon, Inputtext } from '../../components'
+import {colors} from '../../utils'
 
 
 const SignIn = () => {
@@ -10,9 +11,8 @@ const SignIn = () => {
             <View style={styles.wrapbody}>
                 <Inputtext title='Email Address' placeholder='Type your email address' />
                 <Inputtext title='Password' placeholder='Type your password'/>
-                <Button1 title='Sign In'/>
-                <Button2 title='Create New Account'/>
-                
+                <Button title='Sign In'/>
+                <Button title='Create New Account' backcolor={colors.default2} textcolor='white'/>            
             </View>
         </View>
     )
