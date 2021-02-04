@@ -1,3 +1,4 @@
-import HeaderNoIcon from './headerNoIcon'
+import HeaderNoIcon from './headerNoIcon';
+import Header from './header';
 
-export {HeaderNoIcon};
+export {HeaderNoIcon,Header};

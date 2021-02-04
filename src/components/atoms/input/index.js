@@ -14,7 +14,7 @@ const Inputtext =({title,placeholder}) =>{
 
 const styles = StyleSheet.create({
     texttitle:{
-        fontSize:16,
+        fontSize:14,fontFamily:'poppins-medium',
     },
     textinput:{
         borderColor:colors.default2,

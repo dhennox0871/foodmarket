@@ -14,7 +14,7 @@ const HeaderNoIcon =({title,subtitle})=>{
 const styles = StyleSheet.create({
     wrapper:{
         padding:24,
-        
+        backgroundColor:'white'
     }
 });
 export default HeaderNoIcon;
